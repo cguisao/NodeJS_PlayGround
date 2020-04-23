@@ -1,10 +1,12 @@
 const express = require('express');
 
+const path = require('path');
+
 const router = express.Router();
 
 router.get('/users',(req, res, next) => {
     console.log('User page');
-    return res.send('<h1> User Page</h1>');
+    res.sendfile(path.join(__dirname, '..', 'Views', 'users.html'));
 });
 
 module.exports = router;
