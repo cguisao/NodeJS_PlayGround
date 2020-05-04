@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= PageTitle %></title>
+</head>
+<body>
+    <h1>Users</h1>
+    <% if(users.length > 0) { %>
+        <% for( let user of users) { %>
+            <p>User entered: <%= user.name %></p>
+        <% } %>
+    <% } %>
+</body>
+</html>

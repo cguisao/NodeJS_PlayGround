@@ -1,0 +1,10 @@
+extends layout/layout.pug
+
+block body
+    h1 user 
+    if username.length > 0
+        each user in username   
+            ul 
+                li the user is #{user.user}
+    else    
+        p no users!!

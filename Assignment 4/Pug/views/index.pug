@@ -1,0 +1,8 @@
+extends layout/layout.pug
+
+block body
+    h1 Input your name
+    form(method='POST' action='/')
+        label(for="name") Name
+        input(type="text", name="name")
+        button(type='submit') Submit
